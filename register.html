@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         />
+</head>
+
+<body>
+
+    <header id="header">
+        <nav class="flex container1">
+            <div class="logo flex">
+                 <a href="/" title="Blog Website"><h1>Think<span>IT</span></h1></a>
+            </div>
+            <i class='bx bx-menu menu-toggle' style="color: #94a9c9;"></i>
+            <div class="navlist flex">
+                <ul class="flex">
+                    <li><a href="/" class="liactive">Home</a></li>
+                    <li><a href="/" class="liactive">About Me</a></li>
+                    <li><a href="/" class="liactive">Category</a></li>
+                    <li><a href="/" class="liactive">Blogs</a></li>
+                    <li><a href="/" class="liactive"><i class='bx bxs-user'></i>UserName<i class="fa fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#" class="logout">Logout</a></li>
+                    </ul></li>
+                    <li><a href="/" class="liactive">Contact</a></li>
+                </ul>
+            </div>
+            <div class="searchdarksub flex">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="searchclick">
+                        <form action="#">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                        <div class="tagssec">
+                            <h3>Popular tags:</h3>
+                            <div class="tegs flex">
+                                <a href="/">#Travel<span>,</span></a>
+                                <a href="/">#Tech<span>,</span></a>
+                                <a href="/">#Movie<span>,</span></a>
+                                <a href="/">#Lifestyle<span>,</span></a>
+                                <a href="/">#Sport</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="toggle-switch">
+                    <input type="checkbox" class="l toggle-checkbox" id="dark-mode-toggle">
+                    <label class="toggle-label" for="dark-mode-toggle"></label>
+                </div>
+                <button><a href="#subform">Subscribe</a></button>
+            </div>
+        </nav>
+    </header>
+    <div class="auth-content">
+        <form action="register.html" method="post">
+            <h2 class="form-title" style="color: #555;">Register</h2>
+            <!-- <div class="msg success error">
+                <li>Username Required</li>
+            </div> -->
+            <div>
+                <label>Username</label>
+                <input type="text" class="text-input" name="username">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" class="text-input" name="email">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" class="text-input" name="password">
+            </div>
+            <div>
+                <label>Password Confirmation</label>
+                <input type="password" class="text-input" name="passwordConf">
+            </div>
+            <div>
+                <button type="submit" name="register-btn" class="btn-box">Register</button>
+            </div>
+            <p><br>Or <a href="login.html">Sign In</a></p>
+            
+        </form>
+    </div>
+    <script src="main.js"></script>
+    </body>
+
+</html>
